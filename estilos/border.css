@@ -1,0 +1,140 @@
+#apartado1 {
+    height: 240px;
+    width: 500px;
+    border: 3px solid rgba(86, 87, 86, 0.199);
+    border-radius: 30px;
+    background-color: rgba(178, 255, 134, 0.11);
+}
+
+#apartado7{
+    height: 100px;
+    width: 400px;
+    border: 3px solid rgba(86, 87, 86, 0.199);
+    border-radius: 30px;
+    background-color: rgba(178, 255, 134, 0.11);
+}
+
+#apartado2{
+    height: 200px;
+    width: 500px;
+    border: 3px solid rgba(86, 87, 86, 0.199);
+    border-radius: 30px;
+    background-color: rgba(178, 255, 134, 0.11);
+}
+
+#apartado3 {
+    border-right: 10px dashed #3C5391;
+    border-left: 10px inset orange;
+}
+
+#apartado4{
+    padding-top: 5%;
+    text-align: center;
+}
+
+#apartado5{
+    width: 80%;
+    position: relative;
+    left: 5%;
+}
+
+#apartado6{
+    width: 80%;
+    position: relative;
+    right: -55%;
+    top: -210px;
+}
+
+#apartado8{
+    position: relative;
+    right: -55%;
+    top: -480px;
+}
+
+#apartado9{
+    position: relative;
+    left: 5%;
+    top: -500px;
+}
+
+/*footer*/
+#bajada{
+    margin-bottom: 10px;
+}
+
+.footer .copyright{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.footer{
+    padding: 4px 0px ;
+    color: black ;
+}
+
+/*redes sociales footer*/
+
+.footer .social{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#instagram{
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#facebook{
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+    margin-bottom: 60px; 
+}
+
+#twitter{
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#Whastsapp{
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+    margin-bottom: 60px; 
+}
+
+#telephone,#tel{
+    display: inline;
+    width:  20px;
+    height: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+#numero_footer{
+    background-color: white;
+}
+#catalogo_completo{
+    background-color: white;
+}
+
+.footer .social > a{
+    font-size: 24px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    border: 4px solid black;
+    margin: 20px 14px -4px;
+    color: inherit;
+    background-color: white;
+}

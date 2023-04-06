@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/border.css">
+  <title>Document</title>
 </head>
-    <!-- LINK BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<!-- LINK BOOSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid" style=" background-color: rgb(196, 255, 196); height: 80px;">
-          <a class="navbar-brand" href="index.html">Herblife</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="suscribirse.html">Suscribirse</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorias
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
-                  <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
-                  <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid" style=" background-color: rgb(196, 255, 196); height: 80px;">
+      <a class="navbar-brand" href="index.html">Herblife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="suscribirse.html">Suscribirse</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
+              <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
+              <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
             </ul>
-          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="imagen/planta1.jpg" class="card-img-top" alt="Cargando...">
+        <div class="card-body">
+          <h5 class="card-title">Girasol</h5>
+          <p class="card-text">El clásico girasol para aquellos amantes de las flores de colores vivos y grandes.</p>
         </div>
-      </nav>
-    
-    <!-- JAVA BOOSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="imagen/planta2.jpg" class="card-img-top" alt="Cargando...">
+        <div class="card-body">
+          <h5 class="card-title">Brachicome</h5>
+          <p class="card-text"> Hermosa flor que entregará un hermoso ambiente a tu hogar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="imagen/planta3.jpg" class="card-img-top" alt="Cargando...">
+        <div class="card-body">
+          <h5 class="card-title">Dalia Myama Fubuki</h5>
+          <p class="card-text">Flor blanca, que entrega un aspecto elegante y fácil de cuidar para aquellos que quieran
+            distrarse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="imagen/planta4.jpg" class="card-img-top" alt="Cargando...">
+        <div class="card-body">
+          <h5 class="card-title">Rosa Duo Perfumella</h5>
+          <p class="card-text">Perfecto para los amantes de las rosas, esta clásica rosa permitirá tener un hermoso
+            jardín.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--pie de pagina-->
+  <br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <div class="col-sm-12" id="barra-secundaria">
+    <footer class="footer" id="bajada">
+      <div class="social">
+        <a href="https://www.instagram.com/?hl=es"><img src="imagen/instagram.png" alt="instagram" id="instagram"></a>
+        <a href="https://es-la.facebook.com/"><img src="imagen/facebook.png" alt="facebook" id="facebook"></a>
+        <a
+          href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><img
+            src="imagen/twitter.png" alt="twitter" id="twitter"></a>
+        <a href="https://web.whatsapp.com/"><img src="imagen/whatsapp.png" alt="Whastsapp" id="Whastsapp"></a>
+      </div>
+      <dl>
+        <dt id="tel">TELEFONO </dt><a href="#"><img src="imagen/telephone.png" alt="telephone" id="telephone"></a>
+        <dd>
+          <a href="tel:+56 9 55555555" id="numero_footer">(+56 9 5555555)</a>
+        </dd>
+      </dl>
+      <p class="copyright">Rawr company © 2022</p>
+    </footer>
+  </div>
+  <!-- JAVA BOOSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
