@@ -1,3 +1,8 @@
+.navbar{
+    width:auto;
+    height: max-content;
+}
+
 #apartado1 {
     height: 240px;
     width: 500px;
@@ -51,10 +56,6 @@
     position: relative;
     left: 5%;
     top: -500px;
-}
-
-#apartado10{
-    height: fit-content;
 }
 
 #apartado11{
