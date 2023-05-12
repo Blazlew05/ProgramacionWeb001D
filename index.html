@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="estilos/border.css">
   <title>Document</title>
 </head>
@@ -14,75 +17,118 @@
 
 <body>
 
-
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="apartado10">
+    <button id="apartado15" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Herblife</a>
-      <center>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categorias
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
-                <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
-                <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto" id="link2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Página principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Donar</a>
+          </li>
+          <div class="row">
+            <div class="two columns u-pull-right">
+              <ul>
+                <li class="submenu">
+                  <img src="imagen/cart.png" id="img-carrito">
+                  <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                  </div>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </center>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <!-- LOGO -->
+      <div>
+        <a class="navbar" href="index.html" id="logo">
+          <img src="imagen/icono.png" alt="logo" id="logo-pagina">
+        </a>
+      </div>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto" id="link">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
+              <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
+              <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-
-
-
-  <!-- CARRUSEL -->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div id="carrosel" class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imagen/Screenshot_194.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="imagen/Screenshot_193.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="imagen/Screenshot_192.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-  <!-- MERCADO -->
-
 
   <div id="apartado13">
     <div id="apartado12" class="container">
       <div class="row">
+
+        <!-- CARRUSEL -->
+        <div id="carrosel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagen/Screenshot_194.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/Screenshot_193.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/Screenshot_192.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- MERCADO -->
 
         <h1 id="apartado4">SUPER OFERTAS</h1>
 
@@ -197,9 +243,11 @@
 
 
         </div>
-      </div><br><br><br><br><br>
+      </div>
     </div>
   </div>
+
+
   <!--pie de pagina-->
   <hr>
   <div class="col-sm-12" id="barra-secundaria">
@@ -212,12 +260,6 @@
             src="imagen/twitter.png" alt="twitter" id="twitter"></a>
         <a href="https://web.whatsapp.com/"><img src="imagen/whatsapp.png" alt="Whastsapp" id="Whastsapp"></a>
       </div>
-      <dl>
-        <dt id="tel">TELEFONO </dt><a href="#"><img src="imagen/telephone.png" alt="telephone" id="telephone"></a>
-        <dd>
-          <a href="tel:+56 9 55555555" id="numero_footer">(+56 9 5555555)</a>
-        </dd>
-      </dl>
       <p class="copyright">Rawr company © 2022</p>
     </footer>
   </div>

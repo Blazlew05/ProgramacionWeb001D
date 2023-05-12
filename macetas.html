@@ -17,38 +17,82 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="apartado10">
+    <button id="apartado15" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Herblife</a>
-      <center>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categorias
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
-                <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
-                <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto" id="link2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Página principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Donar</a>
+          </li>
+          <div class="row">
+            <div class="two columns u-pull-right">
+              <ul>
+                <li class="submenu">
+                  <img src="imagen/cart.png" id="img-carrito">
+                  <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                  </div>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </center>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <!-- LOGO -->
+      <div>
+        <a class="navbar" href="index.html" id="logo">
+          <img src="imagen/icono.png" alt="logo" id="logo-pagina">
+        </a>
+      </div>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto" id="link">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="macetas.html">Macetas</a></li>
+              <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
+              <li><a class="dropdown-item" href="tierras.html">Tierras</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -57,52 +101,78 @@
   <!-- TARJETAS -->
   <div id="apartado13">
     <div id="apartado12" class="container">
-      <h1 id="seccion">Sección Macetas</h1>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="imagen/maceta1.jpg" class="card-img-top" alt="Cargando...">
-            <div class="card-body">
-              <h5 class="card-title">Maceta Cuarzo</h5>
-              <p class="card-text">Nuestra maceta de cuarzo entrega a vuestras plantas un ambiente fresco y humedo
-                debido a
-                las propiedades del material</p>
-            </div>
+      <div class="row">
+
+        <h1>Sección Macetas</h1>
+
+        <div class="cursos__container">
+
+
+          <div class="curso__item">
+            <div class="curso__card">
+              <img src="imagen/maceta1.jpg" class="imagen__curso">
+              <div class="info__card">
+                <h5>Maceta Cuarzo</h5>
+                <h4 style="font-size: 10px;">Maceta de cuarzo entrega a vuestras plantas un ambiente fresco y humedo
+                  debido a
+                  las propiedades del material </h4>
+                <p><span class="discount">$34.990</span> </p>
+                <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp; AGREGAR AL
+                  CARRITO</a>
+              </div>
+            </div> <!--.card-->
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagen/maceta4.jpg" class="card-img-top" alt="Cargando...">
-            <div class="card-body">
-              <h5 class="card-title">Maceta convencional</h5>
-              <p class="card-text">Aquí tenemos nuestra maceta más tipíca, hecha de plástico y con agujeros en la parte
-                inferior para así filtrar el agua de riego</p>
-            </div>
+
+          <div class="curso__item">
+            <div class="curso__card">
+              <img src="imagen/maceta4.jpg" class="imagen__curso">
+              <div class="info__card">
+                <h5>Maceta convencional</h5>
+                <h4 style="font-size: 10px;">Maceta más tipíca, hecha de plástico y con agujeros en la
+                  parte
+                  inferior para así filtrar el agua de riego </h4>
+                <p><span class="discount">$34.990</span> </p>
+                <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp; AGREGAR AL
+                  CARRITO</a>
+              </div>
+            </div> <!--.card-->
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagen/maceta3.jpeg" class="card-img-top" alt="Cargando...">
-            <div class="card-body">
-              <h5 class="card-title">Maceta plástico negra</h5>
-              <p class="card-text">Maceta plástico color negro, nuestro maceta cuenta con sistema de filtrado y la
-                materialidad es industrial.</p>
-            </div>
+
+          <div class="curso__item">
+            <div class="curso__card">
+              <img src="imagen/maceta3.jpeg" class="imagen__curso">
+              <div class="info__card">
+                <h5>Maceta plástico negra</h5>
+                <h4 style="font-size: 10px;">Maceta plástico color negro, nuestro maceta cuenta con sistema de filtrado
+                  y la
+                  materialidad es industrial </h4>
+                <p><span class="discount">$34.990</span> </p>
+                <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp; AGREGAR AL
+                  CARRITO</a>
+              </div>
+            </div> <!--.card-->
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagen/maceta5.jpg" class="card-img-top" alt="Cargando...">
-            <div class="card-body">
-              <h5 class="card-title">Maceta cerámica</h5>
-              <p class="card-text">Una maceta ideal para aquellos que buscan tener una maceta con mayor estilo y
-                minimalista. Perfecta para el hogar.</p>
-            </div>
+
+          <div class="curso__item">
+            <div class="curso__card">
+              <img src="imagen/maceta5.jpg" class="imagen__curso">
+              <div class="info__card">
+                <h5>Maceta cerámica</h5>
+                <h4 style="font-size: 10px;">Una maceta ideal para aquellos que buscan tener una maceta con mayor estilo
+                  y
+                  minimalista. Perfecta para el hogar </h4>
+                <p><span class="discount">$34.990</span> </p>
+                <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp; AGREGAR AL
+                  CARRITO</a>
+              </div>
+            </div> <!--.card-->
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
 
   <!--pie de pagina-->
   <hr>
@@ -116,15 +186,10 @@
             src="imagen/twitter.png" alt="twitter" id="twitter"></a>
         <a href="https://web.whatsapp.com/"><img src="imagen/whatsapp.png" alt="Whastsapp" id="Whastsapp"></a>
       </div>
-      <dl>
-        <dt id="tel">TELEFONO </dt><a href="#"><img src="imagen/telephone.png" alt="telephone" id="telephone"></a>
-        <dd>
-          <a href="tel:+56 9 55555555" id="numero_footer">(+56 9 5555555)</a>
-        </dd>
-      </dl>
       <p class="copyright">Rawr company © 2022</p>
     </footer>
   </div>
+
 
   <!-- MODAL -->
 
